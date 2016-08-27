@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GUI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gui" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/surcouche" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-mms-bitfields" />
+			<Add directory="./include" />
+			<Add directory="./include/gtk-3.0" />
+			<Add directory="./include/cairo" />
+			<Add directory="./include/gdk" />
+			<Add directory="./include/glib-2.0" />
+			<Add directory="./lib/glib-2.0/include" />
+			<Add directory="./include/pango-1.0" />
+			<Add directory="./lib/gtk-3.0/include" />
+			<Add directory="./include/atk-1.0" />
+			<Add directory="./include/gdk-pixbuf-2.0" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-3.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add directory="/lib" />
+		</Linker>
+		<Unit filename="GUI/Button.cpp" />
+		<Unit filename="GUI/Button.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Color.cpp" />
+		<Unit filename="GUI/Color.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/ComboBox.cpp" />
+		<Unit filename="GUI/ComboBox.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Container.cpp" />
+		<Unit filename="GUI/Container.hpp" />
+		<Unit filename="GUI/Entry.cpp" />
+		<Unit filename="GUI/Entry.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/GUI.cpp" />
+		<Unit filename="GUI/GUI.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Image.cpp" />
+		<Unit filename="GUI/Image.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Label.cpp" />
+		<Unit filename="GUI/Label.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Layouts/Box.cpp" />
+		<Unit filename="GUI/Layouts/Box.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Layouts/Fixed.cpp" />
+		<Unit filename="GUI/Layouts/Fixed.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Layouts/Frame.cpp" />
+		<Unit filename="GUI/Layouts/Frame.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/ProgressBar.cpp" />
+		<Unit filename="GUI/ProgressBar.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Range.cpp" />
+		<Unit filename="GUI/Range.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Slider.cpp" />
+		<Unit filename="GUI/Slider.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Widget.cpp" />
+		<Unit filename="GUI/Widget.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="GUI/Window.cpp" />
+		<Unit filename="GUI/Window.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
